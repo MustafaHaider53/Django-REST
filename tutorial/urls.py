@@ -21,8 +21,6 @@ from snippets import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('snippets.urls')),
-    path('', views.api_root),
-    path('snippets/<int:pk>/highlight/', views.SnippetHighlight.as_view()),
 ]
 
 urlpatterns += [
